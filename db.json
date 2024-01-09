@@ -1,13 +1,26 @@
 {
-  "posts": {
-    "status": "SUCCESS",
-    
-  },
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+    "user": {
+        "status": "success",
+        "statusCode": 200,
+        "message": "User data retrieved successfully",
+        "payload": {
+            "id": 1,
+            "name": "John Doe"
+        }
+    },
+    "user_lists": {
+        "status": "success",
+        "statusCode": 200,
+        "message": "User data retrieved successfully",
+        "payload": [
+            {
+                "id": 1,
+                "name": "John Doe"
+            },
+            {
+                "id": 2,
+                "name": "Jane Smith"
+            }
+        ]
+    }
 }
